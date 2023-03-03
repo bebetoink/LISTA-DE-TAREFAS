@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista TO-DO</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -12,26 +13,44 @@
         <h1>Lista TO-DO</h1>
         <input type="text" class="todo-input" placeholder="Digite sua tarefa">
         <div class="Tarefas">
-            <div class="unconplet-tarefas"></div>
-            <div class="tarefas-item"></div>
+            <div class="unconplet-tarefas">
+                <div class="tarefas-item">
+                     <span>
+                         <input type="checkbox"> Beber agua
+                     </span>
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                     </a>
+             </div>
+            <div class="completed-tarefas"></div>
+            <div class="completed-title">Concluiu (1/3)</div>
+
+            <div class="tarefas-item">
+                <span>
+                    <input type="checkbox"> Beber agua
+                </span>
+                <a href="#">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                     </svg>
+                </a>
+        </div>
+
+        <div class="tarefas-item">
             <span>
                 <input type="checkbox"> Beber agua
             </span>
-            <div class="completed-tarefas"></div>
-        </div>
+            <a href="#">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                 </svg>
+            </a>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+    </div>
+    <script src="lista TODO.js"></script>
 
 
 
