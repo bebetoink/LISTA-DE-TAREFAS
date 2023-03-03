@@ -5,15 +5,14 @@
     --app-width: 600px;
 }
 
-
-*{
+* {
 
 box-sizing: border-box;
 
 }
 
 body{
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +24,7 @@ body{
 .app{
     color: #ffffffb0;
     background-color: #ffffff21;
-    width:  var(-app-width);
+    width:  var(--app-width);
     border-radius:  var(--radius);
     padding:2rem;
     box-shadow: 0 15px 40px -20px black;
@@ -40,7 +39,7 @@ body{
 .todo-input{
     width: 100%;
     margin-bottom: 2rem;
-    border: none;
+    border:none;
     border-radius: var(--radius);
     padding:1rem 1.5rem;
     font-size: 20px;
@@ -49,48 +48,49 @@ body{
 }
 
 .todo-input::placeholder{
-    color: white;
+    color: #ffffff70;
 }
 
-.Tarefas,
-.completed-tarefas,
-.unconplet-tarefas{
+.todos,
+.completed-todos,
+.uncompleted-todos{
     display: flex;
     flex-direction: column;
     gap: .8rem;
 }
 
-.tarefas-item {
+.todo-item {
     background-color: #f4f4f4bd;
-    padding:  1rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: var(--radius);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color:black;
 }
-.tarefas-item span {
+
+.todo-item span {
     display: flex;
     align-items: center;
     gap: .8rem;
 }
-.tarefas-item input[type=checkbox] {
+.todo-item input[type=checkbox] {
     width: 20px;
     height: 20px;
     accent-color: lime;
 }
 
-.tarefas-item a {
+.todo-item a {
     color: #555555;
 
 }
 
-.tarefas-item a svg {
-    width: 20px;
+.todo-item a svg {
+    width: 25px;
     height: 25px;
     pointer-events: none;
 }
-.completed-tarefas .tarefas-item {
+.completed-todos .todo-item {
     background-color: #74c674;
     text-decoration: line-through;
 
