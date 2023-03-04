@@ -8,7 +8,7 @@ const audio = new Audio ('sound-task.mp3')
 // Get todo list
 
 window.onload = () => {
-    let storageTodoItems = localStorage.getitem('todoItems')
+    let storageTodoItems = localStorage.getItem('todoItems')
     if (storageTodoItems !== null){
         todoItems = JSON.parse(storageTodoItems)
     }
@@ -58,7 +58,7 @@ function markAscompleted(id){
         return todo
     })
     audio.play()
-    
+
     saveAndRender()
 }
 
@@ -94,7 +94,8 @@ if(unCompletedTodos.length > 0) {
     unCompletedTodos.forEach(todo => {
     uncompletedTodosDiv.append(createTodoElement(todo))
 })
-}else{
+}
+else{
     uncompletedTodosDiv.innerHTML = `<div class = 'empty'>No uncompleted mission</div>`
 }
 
@@ -135,7 +136,7 @@ function createTodoElement(todo){
     todoInputCheckbox.checked = todo.completed
     todoInputCheckbox.onclick = (e) => {
         let id = e.target.closest('.todo-item').dataset.id
-        e.target.checked ? markAscompleted(id) : markAsUncompleted(id)
+        e.target.checked?markAscompleted(id) : markAsUncompleted(id)
 }
 
 
@@ -145,7 +146,7 @@ function createTodoElement(todo){
 
 //fechar tarefa
 
-const todoRemoveBtn = document.createElement(a)
+const todoRemoveBtn = document.createElement('a')
 todoRemoveBtn.href = '#'
 todoRemoveBtn.innerHTML = `<svg fill="#808080" 
 height="100px"
